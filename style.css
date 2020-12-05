@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, rgba(167, 158, 158, 0.6),rgba(224, 215, 215, 0.7));
+    background: linear-gradient(120deg, rgba(88, 85, 85, 0.8),rgba(224, 215, 215, 0.7));
 }
 
 
@@ -19,18 +19,19 @@ body{
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .card{
-    flex-basis: 30%;
+    flex-basis: 31%;
     border-radius: 3%;
    /* border: 1px solid black; */
    overflow: hidden;
    box-shadow: -1px 4px 12px 2px rgba(0,0,0,0.6);
-   margin: 0 19px;
+   margin: 0 14px;
    transition: all 0.5s;
    cursor: pointer;
+   position: relative;
 }
 
 .card:hover{
@@ -44,18 +45,13 @@ body{
      }
      .row{
          height: 100vh;
+         flex-wrap: wrap;
      }
 }
 
-.card-img-container{
-    width: 100%;
-    position: relative;
-  
-    
-}
 
 
-.card-img-container img{
+.bg-card{
     width: 100%;
     display: block;
     height: 200px;
@@ -64,21 +60,18 @@ body{
 }
 
 
-.card-img-container div{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-}
 
-.card-img-container .profile-img-round img{
+
+.profile-img{
     
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    transform: scale(1.3);
     object-fit: cover;
     border: 4px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.3);
     
     
     
